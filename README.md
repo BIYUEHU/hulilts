@@ -18,7 +18,8 @@
 require(__DIR__ . '../../core/sdk.php');
 
 /* 设置机器人账号ID */
-define('robotId', 5);
+define('robotId', null);
+//使用机器人记得先把上面的null替换成对应的机器人账号ID
 
 /* 主要部分 */
 function MainRun($message) {
@@ -35,8 +36,10 @@ function MainRun($message) {
     };
     //...
     
-    $back = $back . '   ByBIYUEHU';
-    ApiSendMessage(robotId, $back);
+    if ($back) {
+        $back = $back . '   ByBIYUEHU';
+        ApiSendMessage(robotId, $back);
+    }
 };
 
 ?>

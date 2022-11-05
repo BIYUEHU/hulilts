@@ -3,7 +3,7 @@
 require(__DIR__ . '../../core/sdk.php');
 
 /* 设置机器人账号ID */
-define('robotId', 5);
+define('robotId', null);
 
 /* 主要部分 */
 function MainRun($message) {
@@ -50,8 +50,10 @@ function MainRun($message) {
         $back = file_get_contents('http://82.157.165.201/api/webtool?op=3&url=' . mb_substr($message, 4));
     };
     
-    $back = $back . '   ByBIYUEHU';
-    ApiSendMessage(robotId, $back);
+    if ($back) {
+        $back = $back . '   ByBIYUEHU';
+        ApiSendMessage(robotId, $back);
+    }
 };
 
 ?>
