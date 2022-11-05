@@ -1,0 +1,36 @@
+.input-group {
+      margin: 20px 0;
+    }
+
+    .form-group {
+      display: flex;
+    }
+
+    .form-group>* {
+      flex: 1;
+      margin: 10px;
+    }
+
+    table {
+      background-color: white;
+    }
+
+    a {
+      text-decoration: none !important;
+    }
+
+    table {
+      font-size: 25px;
+    }
+
+    td {
+      vertical-align: middle !important;
+    }
+
+    tr td:last-child {
+      text-align: center;
+    }
+
+    img {
+      width: 140px !important;
+    }

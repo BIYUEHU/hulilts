@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>登录账户-HULI聊天室</title>
+
+  <link href="./lib/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/index2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div>
+
+    <form  method='post' action="./method/doLogin.php">
+      <h2 class="white">登录</h2>
+      <!--<div class="tips">提示信息</div>-->
+      <div class="form-group">
+        <label class="color2" for="exampleInputEmail1">用户名</label>
+        <input type="text" name='userName' class="form-control" placeholder="用户名">
+      </div>
+      <div class="form-group">
+        <label class="color2" for="exampleInputPassword1">密码</label>
+        <input type="password" name='userPwd' class="form-control" placeholder="密码">
+      </div>
+      <div class="form-group btn-container">
+        <a href='./register.html' class="btn color3">注册</a>
+        <button type="submit" class="btn login">登录</button>
+      </div>
+    </form> 
+  </div>
+</body>
+
+</html>

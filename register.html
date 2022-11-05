@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>创建账号-HULI聊天室</title>
+
+  <link href="./lib/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/index2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div>
+    <form action="./method/doRegister.php" method="POST" enctype="multipart/form-data">
+      <h2 class="white">注册</h2>
+      <!--<div class="tips">提示信息</div>-->
+      <div class="form-group">
+        <label class="color2">用户名</label>
+        <input name="userName" required type="text" class="form-control" maxlength="10" placeholder="用户名">
+      </div>
+      <div class="form-group">
+        <label class="color2">密码</label>
+        <input name="userPwd" required type="password" class="form-control" maxlength="50" placeholder="密码">
+      </div>
+      <div class="form-group">
+        <label class="color2">头像</label>
+        <input name="userIcon" required type="file">
+      </div>
+      <div class="form-group btn-container">
+        <a href='./login.html' class="btn color3">返回登陆</a>
+        <button type="submit" class="btn login">注册</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
