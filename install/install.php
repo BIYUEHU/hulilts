@@ -52,7 +52,7 @@ if ($dbIp != null && $dbName != null && $dbUser != null && $dbPassword != null) 
     
     
     include_once('../core/ini.php');
-    include_once('../core/database.php');
+    include_once('../core/func.php');
     $DB = new mysqli($dbIp, $dbUser, $dbPassword, $dbName);
 
     if ($DB -> connect_error) {
