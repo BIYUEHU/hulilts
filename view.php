@@ -18,7 +18,7 @@ if(!isset($_SESSION['info'])){
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>用户查看-<?php echo $title;?></title>
-  <link href="./lib/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.staticfile.net/bootstrap/4.5.3/css/bootstrap.min.css" rel="stylesheet">
   <link href="./css/index3.css" rel="stylesheet" type="text/css">
 </head>
 
